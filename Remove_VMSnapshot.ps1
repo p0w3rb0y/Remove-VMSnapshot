@@ -27,7 +27,7 @@ function Remove-VMSnapshot {
         Without the delete parameter specified the function will show you what would be deleted.
         Specify this parameter to actually delete the snapshots.
     .LINK
-        https://gitlab.opentext.net/Cloud-Ops_PowerShell/Delete_Snapshots/blob/master/Remove_VMSnapshot.ps1
+        https://github.com/p0w3rb0y/Remove-VMSnapshot/edit/master/Remove_VMSnapshot.ps1
     #>
     [cmdletbinding()]
 
@@ -71,8 +71,8 @@ function Remove-VMSnapshot {
         $Time = Get-Date
         $vcenterinfo = Get-vCenterInfo -Datacenter $Datacenter
         $EmailParams = @{
-            To         = "cloudopssupport@opentext.com"
-            From       = "byesnapshots@opentext.com"
+            To         = "email@email.com"
+            From       = "email@email.com"
             SMTPServer = $vCenterInfo.smtpserver
             BodyAsHtml = $true
         }
